@@ -1,0 +1,419 @@
+body {
+    font: 18px 'Open Sans', sans-serif;
+    background: #f8f8f8;
+}
+
+/* Using local fonts? Check out Font Squirrel's webfont generator: http://www.fontsquirrel.com/tools/webfont-generator */
+
+/* We like off-black for text. */
+body, select, input, textarea {color: #333;}
+
+a {color: #d24040;}
+a:hover {color: #333;}
+
+/* Custom text-selection colors (remove any text shadows: http://twitter.com/miketaylr/status/12228805301) */
+::-moz-selection{background: #d24040; color: #fff; text-shadow: none;}
+::selection {background: #d24040; color: #fff; text-shadow: none;}
+
+/*	j.mp/webkit-tap-highlight-color */
+a:link {-webkit-tap-highlight-color: #d24040;}
+
+ins {background-color: #fcd700; color: #000; text-decoration: none;}
+mark {background-color: #fcd700; color: #000; font-style: italic; font-weight: bold;}
+
+/* Mozilla dosen't style placeholders by default */
+input:-moz-placeholder { color:#a9a9a9; }
+textarea:-moz-placeholder { color:#a9a9a9; }
+
+/* let's give blockquotes *some* default styling, because unstyled blockquotes are dangerous */
+blockquote {padding: 16px; background: #eee; margin-bottom: 1em;}
+
+table {
+    background: white;
+    border: 1px solid #e6e6e6;
+    border-bottom: 0;
+}
+
+table th {
+    font-weight: bold;
+}
+table td, table th {
+    padding: .5em;
+    border-bottom: 1px solid #e6e6e6;
+}
+
+ul {
+    list-style-type: disc;
+    padding-left: 1em;
+}
+
+li {
+    margin-bottom: 1em;
+}
+
+figure {
+    display: inline-block;
+    background: white;
+    border: 1px solid #e6e6e6;
+    text-align: center;
+    width: auto;
+    padding: 1em;
+    margin: 0 0 1em;
+}
+
+.is-mobile {
+    display: none;
+}
+
+.right-bloc {
+    float: right;
+    max-width: 50%;
+    margin: 0 0 1em 1em;
+}
+
+.left-bloc {
+    max-width: 48%;
+    display: inline-block;
+    margin: 1em 0;
+}
+
+article {
+    padding-top: 3em;
+    padding-bottom: 2em;
+}
+
+p {
+    margin: 0 0 1em;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+h1 a {
+    text-decoration: none;
+}
+
+h2 {
+    color: #d24040;
+    color: #cf83c0;
+    color: #53aab6;
+    font-size: 1.6em;
+    text-transform: uppercase;
+    margin-top: 1.5em;
+}
+
+h3 {
+    font-weight: bold;
+    margin-top: 1em;
+}
+
+.wrapper {
+    max-width: 980px;
+    margin: auto;
+}
+
+#header {
+    font-size: 15px;
+    height: 500px;
+    /*padding-top: 170px;*/
+    overflow: hidden;
+    position: relative;
+
+    background: white url(../img/bg.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#header h1 {
+    font-family: 'Delius', cursive;
+    font-size: 5em;
+    text-align: center;
+    margin-top: 170px;
+}
+
+#header p {
+    font-size: 2.5em;
+    margin-top: 0;
+    text-align: center;
+}
+
+#canvas {
+    position: absolute;
+}
+
+#header-text {
+    position: absolute;
+    width: 100%;
+}
+
+#navigation {
+    font-size: 15px;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: white;
+    border-bottom: 1px solid #e6e6e6;
+}
+
+#navigation a {
+    padding: 1.5em 1em;
+    display: block;
+    color: #b7326d;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+#navigation .menu-logo {
+    display: none;
+}
+
+#navigation .menu-logo a {
+    color: #333;
+}
+
+#navigation .menu-logo span {
+    font-family: 'Delius', cursive;
+}
+
+#navigation a:hover {
+    background: #f6f6f6;
+}
+
+#navigation ul {
+    list-style-type: none;
+    padding-left: 0;
+
+    -webkit-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.1);
+    -moz-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.1);
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.1);
+}
+
+#navigation li {
+    margin: 0;
+}
+
+#navigation > ul > li {
+    float: left;
+    list-style-type: none;
+}
+
+#navigation ul li ul {
+    display: none;
+    position: absolute;
+    background: white;
+}
+
+#navigation ul li ul li {
+}
+
+#navigation > ul > li:hover ul {
+    display: block;
+}
+
+#footer {
+    background: white;
+    padding: 1em 0 5em;
+    border-top: 1px solid #e6e6e6;
+}
+
+/* contato */
+
+#contactWrapper { max-width: 600px; margin: 0 auto 2em; text-align: center;}
+#contactWrapper .error { color: #c40000; font-size: .8em; }
+
+.stage { margin: .5em 0; border: 1px solid #CCC; background: white; }
+/*#contactWrapper label { text-align: right; clear: both; float: left; width: 34%; margin-right: 2%; display: block; }
+#contactWrapper input {float: left; width: 64%; display: block; border: 0; height: 3em; outline: none; background: #e8e8e8; padding: .8em;}*/
+#contactWrapper input {width: 100%; display: block; border: 0; height: 3em; outline: none; background: white; padding: .8em;}
+#contactWrapper input:focus { background: #f8f8f8; }
+#contactWrapper textarea { width: 100%; border: 0; outline: none; background: white; padding: .8em; }
+#contactWrapper textarea:focus { background: #f8f8f8; }
+#contactWrapper #sendMessage {
+    padding: 1em;
+    background: #53aab6;
+    /*margin-left: 36%;*/
+    text-transform: uppercase;
+    color: #FFF;
+}
+
+#incompleteMessage {
+    color: #ffa400;
+}
+
+#failureMessage {
+    color: #d24040
+}
+
+/* Dimensions and position of the status messages */
+.statusMessage {
+    background: white;
+    border: 1px solid #a7a7a7;
+
+    -webkit-box-shadow: 0px 0px 93px 0px rgba(0,0,0,0.3);
+    -moz-box-shadow: 0px 0px 93px 0px rgba(0,0,0,0.3);
+    box-shadow: 0px 0px 93px 0px rgba(0,0,0,0.3);
+
+    display: none;
+    margin: auto;
+    width: 30em;
+    height: 5em;
+    padding: 1.5em;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.statusMessage p {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* Display correctly filled-in fields with a green background */
+input:valid, textarea:valid {
+    background: #dfd;
+}
+
+/* Always set the map height explicitly to define the size of the div
+* element that contains the map. */
+#map {
+    height: 500px;
+}
+
+.map-container {
+    display: none;
+    height: 500px;
+}
+
+.location .map-container, .tourism .map-container {
+    display: block;
+}
+
+#floating-panel {
+    background-color: #fff;
+    padding: 5px;
+    /*padding-left: 10px;*/
+    border: 1px solid #999;
+    text-align: center;
+    line-height: 30px;
+    position: absolute;
+    z-index: 1;
+    font-size: .8em;
+    margin: 10px;
+}
+#floating-panel ul {
+    padding: 0;
+}
+#floating-panel li {
+    text-align: left;
+    list-style-type: none;
+    margin: 0;
+}
+
+#floating-panel img {
+    width: 20px;
+}
+
+/* Media queries
+-------------------------------------------------------------------------------*/
+
+@media screen and (max-width: 480px) {
+}
+
+@media screen and (max-width: 880px) {
+
+    #header {
+        height: 200px;
+    }
+
+    #header h1 {
+        margin-top: 70px;
+    }
+
+    .statusMessage {
+        -webkit-box-shadow: 0px 0px 93px 0px rgba(0,0,0,0.1);
+        -moz-box-shadow: 0px 0px 93px 0px rgba(0,0,0,0.1);
+        box-shadow: 0px 0px 93px 0px rgba(0,0,0,0.1);
+
+        margin: auto;
+        width: 90%;
+        min-height: 150px;
+    }
+
+    .is-mobile {
+        display: block;
+        position: fixed;
+        z-index: 11;
+        right: 10px;
+        top: 10px;
+        text-indent: -9999999px;
+    }
+
+    #toggle-menu {
+        display: block;
+        width: 40px;
+        height: 40px;
+        background: url(../img/menu.png) no-repeat center top;
+    }
+
+    .wrapper {
+        padding: 0 2em;
+    }
+    .right-bloc {
+        float: none;
+        max-width: 100%;
+        margin: 1em 0;
+    }
+    .left-bloc {
+        float: none;
+        max-width: 100%;
+        display: inline-block;
+        margin: 1em 0;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1.2em;
+        margin-top: .8em;
+    }
+
+    #header h1 {
+        font-size: 3em;
+    }
+
+    #navigation {
+        display: none;
+    }
+
+    #navigation .wrapper {
+        padding: 0;
+    }
+    #navigation > ul > li {
+        float: none;
+    }
+
+    #navigation ul li ul {
+        left: 30%;
+        top: 0;
+        width: 70%;
+    }
+}
+
+
+
+/* Print styles
+-------------------------------------------------------------------------------*/
+@media print {
+
+
+
+}

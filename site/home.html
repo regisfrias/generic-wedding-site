@@ -109,7 +109,7 @@ function submitFinished( response ) {
 <div class="wrapper">
     <div class="rsvp" id="contactWrapper">
         <h1 id="rsvp">RSVP</h1>
-        <p>Toivomme ilmoittautumista 15.6. mennessä</p>
+        <p>Toivomme ilmoittautumiset 31.7.2018 mennessä</p>
 
         <form id="contactForm" action="processForm.php" method="post">
 
@@ -126,7 +126,15 @@ function submitFinished( response ) {
             </div>
 
             <div class="stage">
-                <input type="text" name="allergies" id="allergies" placeholder="Allergiat ja erityisruokavaliot" maxlength="40" />
+                <input type="text" name="allergies" id="allergies" placeholder="Allergiat ja erityisruokavaliot" maxlength="60" />
+            </div>
+
+            <div class="stage">
+                <input type="text" name="allergies" id="ride1" placeholder="Tarvitsetteko kyytiä kirkolta juhlapaikalle?" maxlength="40" />
+            </div>
+
+            <div class="stage">
+                <input type="text" name="allergies" id="ride2" placeholder="Tarvitsetteko kyytiä illalla juhlapaikalta keskustaan, n. klo 23 aikaan?" maxlength="40" />
             </div>
 
             <div class="stage">
